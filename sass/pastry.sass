@@ -1,0 +1,118 @@
+.pastry
+    width: 100%
+    height: auto
+    position: relative
+    background-color: #000
+    z-index: 5
+    margin: 8rem 0rem 0rem
+    display: flex
+    justify-content: center
+    align-items: flex-start
+    box-shadow: 5px 5px 20px #000
+    overflow: hidden
+    .inner-container
+        height: auto
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: flex-start
+        .header-container
+            height: auto
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: flex-start
+            gap: 10px
+            //Sub h
+            .sub-h
+                font-family: "Poppins"
+                color: gold
+                text-transform: lowercase
+                letter-spacing: 1.2px
+            //Main h
+            .main-h
+                font-family: "Poppins"
+                font-weight: 500
+                color: #fff
+                text-transform: capitalize
+                text-align: center
+        .content-container
+            width: 100%
+            height: auto
+            display: flex
+            justify-content: center
+            align-items: flex-start
+            position: relative
+            .product-card
+                width: 14rem
+                height: 30rem
+                border: 2px solid #fff
+                box-shadow: 2px 2px 4px #fff
+                border-radius: 1rem
+                padding: 2rem 1rem
+                transition: all 0.3s ease-in-out
+                position: absolute
+                background-color: #000
+                //Information content 
+                .product-card_main-content
+                    width: 100%
+                    height: auto
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    justify-content: flex-start
+                    img
+                        width: 100%
+                    .product-h
+                        font-family: "Poppins"
+                        font-size: 1.3rem
+                        font-weight: 500
+                        color: gold
+                        text-transform: uppercase
+                        margin: 2rem 0rem 0rem
+                    .product-desc
+                        font-family: "Poppins"
+                        font-size: 1rem
+                        font-weight: 400
+                        color: #fff 
+                        text-align: center
+                        margin: 1.5rem 0rem 0rem
+            .card-0
+                transform: translate3d(0rem, 0rem, 0px) scale(1, 1)
+                z-index: 10
+            .card-1
+                transform: translate3d(2rem, 0rem, 0px) scale(1, .8)
+                z-index: 9
+            .card-2
+                transform: translate3d(3rem, 0rem, 0px) scale(1, .6)
+                z-index: 8
+            .card-3
+                transform: translate3d(4rem, 0rem, 0px) scale(1, .4)
+                z-index: 7
+            .card--1
+                transform: translate3d(-2rem, 0rem, 0px) scale(1, .8)
+                z-index: 9
+            .card--2
+                transform: translate3d(-3rem, 0rem, 0px) scale(1, .6)
+                z-index: 8
+            .card--3
+                transform: translate3d(-4rem, 0rem, 0px) scale(1, .6)
+                z-index: 7
+                //Content which will appear when user want to buy item
+            
+@media screen and (min-width: 320px)
+    .pastry
+        .inner-container
+            width: 100%
+            padding: 10rem 0rem 45rem
+            gap: 4rem
+            .header-container
+                width: 80%
+                gap: 2rem
+                .sub-h
+                    text-align: center
+                    font-size: 1rem
+                    font-weight: 500
+                .main-h
+                    font-size: 2.5rem
+                    line-height: 3rem
